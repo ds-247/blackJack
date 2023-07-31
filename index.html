@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Black Jack</h2>
+      <h3 class="verdict">Let's Play</h3>
+      <div class="board_row flex-row">
+        <div id="userBox" class="user">
+          <h3 id="displayUser">You : <span class="user_skore"> 0</span></h3>
+        </div>
+        <div id="botBox" class="bot">
+          <h3 id="displayBot">Bot : <span class="bot_skore"> 0</span></h3>
+        </div>
+      </div>
+      <div class="controls_row">
+        <div class="controls">
+          <button id="hit" class="btn btn-primary">Hit</button>
+          <button id="stand" class="btn btn-warning">Stand</button>
+          <button id="deal" class="btn btn-danger">Deal</button>
+        </div>
+      </div>
+
+      <div class="table_row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Win</th>
+              <th>Loss</th>
+              <th>Draw</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="win">0</td>
+              <td id="lost">0</td>
+              <td id="draw">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="brain.js"></script>
+  </body>
+</html>

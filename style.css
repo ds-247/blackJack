@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.heading {
+  font-family: "Borel", cursive;
+  margin: 0;
+  margin-top: 5px;
+  font-size: 2rem;
+}
+
+.verdict {
+  margin: 0;
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.flex-row,
+.controls,
+.table_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.board_row,
+.controls_row {
+  background: url("bg.jpg") center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.board_row div h3 {
+  margin: 0;
+}
+
+.board_row div {
+  border: 1px solid black;
+  padding: 10px;
+  height: 15rem;
+  flex: 1;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 20px;
+  font-weight: 900;
+  margin: 0 6px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btn:hover {
+  box-shadow: 3px 4px 2px 0px #402121;
+}
+
+img {
+  height: 40%;
+  margin: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 25px;
+}
